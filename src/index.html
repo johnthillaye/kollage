@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Kollage</title>
+		<base href="/" />
+		<link rel="stylesheet" href="./main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id="navbar">
+			<div id="logo">
+				<a href="/"><h1>Kollage</h1></a>
+			</div>
+			<ul id="rightbuttons">
+				<li><a href="#new" id="new">[new]</a></li>
+				<li>/</li>
+				<li><a href="#edit" id="edit" class="hide-edit">[edit]</a></li>
+				<li><a href="#done" id="doneEdit" class="hidden show-edit">[done editing]</a></li>
+				<li>/</li>
+				<li><a href="#share" id="share">[share]</a></li>
+			</ul>
+			<ul id="sharebuttons" class="hidden show-share">
+			  <li><a href="javascript:window.print();">print</a></li>
+			  <li><a href="http://www.twitter.com/share?url=http://kollage.co" target="_blank">twitter</a></li>
+			  <li><a href="http://facebook.com/sharer/sharer.php?app_id=640350796107376&amp;sdk=joey&amp;u=http://kollage.co" target="_blank">facebook</a></li>
+			</ul>
+		</div>
+		<div id="mainContainer">
+			<div class="hidden show-edit">
+				<form id="addLink" class="addlink-form">
+					<input type="text" placeholder="http://" id="linkInput" class="form-input"/>
+					<button type="submit" class="button">ADD IMAGES</button>
+				</form>
+			</div>
+			<div class="hidden show-fullsize fullsize">
+				<div class="fullsizeImage closeFullSize"></div>
+				<div class="buttons">
+					<a href="#close" class="closeFullSize">[close]</a>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="clearfix mosaic hide-fullsize">
+				</div>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="./vendor/jquery.mosaicflow.min.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>

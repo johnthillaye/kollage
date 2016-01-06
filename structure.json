@@ -1,0 +1,20 @@
+home : {
+	
+},
+kollage/id/edit: {
+	
+},
+kollage/random: {
+	
+}
+kollage/new: {
+	
+},
+kollage/id: {
+	actions: {
+		share
+	}
+},
+kollage/id/imagefullsize {
+	
+}
